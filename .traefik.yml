@@ -1,0 +1,15 @@
+displayName: Hp Auth
+type: middleware
+
+import: github.com/RashedEmon/hpauth
+
+summary: 'prepare hotel planner auth token and set authorization header'
+
+hpauth:
+  Headers:
+    X-Demo: test
+    X-URL: '{{URL}}'
+  HpConfig:
+    apiKey: "xxx"
+    secretKey: "xxx"
+    accountId: "xxx"
