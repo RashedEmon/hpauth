@@ -5,7 +5,7 @@ import: github.com/RashedEmon/hpauth
 
 summary: 'prepare hotel planner auth token and set authorization header'
 
-hpauth:
+testData:
   Headers:
     X-Demo: test
     X-URL: '{{URL}}'
