@@ -1,3 +1,3 @@
 module github.com/RashedEmon/hpauth
 
-go 1.20
+go 1.21.4
