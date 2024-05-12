@@ -1,3 +1,3 @@
-module github.com/RashedEmon/hpauth
+module github.com/traefik/hpauth
 
-go 1.21.4
+go 1.22.3
