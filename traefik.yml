@@ -1,0 +1,20 @@
+entryPoints:
+  web:
+    address: ":80"
+    reusePort: true
+    asDefault: true
+api:
+  insecure: true
+  dashboard: true
+  debug: true
+providers:
+  file:
+    directory: /etc/traefik/
+    watch: true
+    filename: dynamic_config.yml
+    debugLogGeneratedTemplate: true
+experimental:
+  localPlugins:
+    hpauth:
+      moduleName: github.com/traefik/hpauth
+  

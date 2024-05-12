@@ -1,0 +1,24 @@
+http:
+  routers:
+    router1:
+      rule: "PathPrefix(`/api/`)"
+      middlewares:
+        - addauthheader
+      entryPoints:
+        - "web"
+      service: booking
+  services:
+    booking:
+      loadBalancer:
+        servers:
+          - url: "http://192.168.0.101:8000"
+  middlewares:
+    addauthheader:
+      plugin:
+        hpauth:
+          Headers: 
+            - regex: example
+          HpConfig:
+            - apiKey: "emon"
+            - secretKey: "rashed"
+            - accountId: "123456"
