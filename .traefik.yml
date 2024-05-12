@@ -1,7 +1,7 @@
 displayName: Hp Auth
 type: middleware
 
-import: github.com/RashedEmon/hpauth
+import: github.com/traefik/hpauth
 
 summary: 'prepare hotel planner auth token and set authorization header'
 
